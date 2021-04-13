@@ -16,4 +16,20 @@ class QuizRepository implements IQuizRepository {
     {
         return Quiz::where("_id", $id)->first();
     }
+
+    public function update(string $id, array $newQuiz)
+    {
+        $quiz = Quiz::find($id);
+
+        $quiz->questions = $newQuiz;
+
+        $quiz->save();
+
+        return $quiz;
+    }
+
+    public function delete(string $id) {
+        $quiz = Quiz::where("_id", $id)->first();
+        $quiz->delete();
+    }
 }
