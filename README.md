@@ -19,3 +19,5 @@
 </h2>
 <p align="center"> [X] Create Quiz</p>
 <p align="center"> [X] GET Quiz</p>
+<p align="center"> [X] Update Quiz adding New Question</p>
+<p align="center"> [X] DELETE QUIZ</p>
